@@ -17,6 +17,9 @@ const users = [
         password: "charlie123"
     }
 ]
+app.get("/",(req,res)=>{
+    res.status(201).json({message:"HIIII"})
+})
 
 app.put("/update", (req,res)=>{
     const {email,password} = req.body
